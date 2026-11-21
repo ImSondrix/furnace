@@ -2,6 +2,10 @@ name: Build Furnace Android
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/android.yml'
+
 
 jobs:
   build-android:
